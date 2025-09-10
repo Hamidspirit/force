@@ -1,0 +1,446 @@
+
+/* general styel for this dco specificllay */
+body h3{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border: solid;
+    border-color: black;
+    border-radius: 5%;
+}
+
+
+/* Posibbly for footer graadient */
+.client-hero {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+@keyframes gradientShift {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+
+/* for cards */
+.client-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.client-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* a button effect */
+
+.client-button {
+  background: transparent;
+  color: #0ff;
+  border: 2px solid #0ff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0ff, inset 0 0 10px #0ff;
+}
+
+.client-button:hover {
+  background: #0ff;
+  color: #111;
+  box-shadow: 0 0 20px #0ff, inset 0 0 20px #0ff;
+}
+
+/*  morphing header */
+/* Default header style */
+.morph-header {
+  position: relative; /* normal flow at top */
+  width: 100%;
+  background: #fff;
+  transition: all 0.4s ease;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 9999;
+}
+
+/* When scrolled */
+.morph-header.scrolled {
+  position: fixed;
+  top: 20px; /* distance from top */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%; /* shrink width */
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* style for forms */
+/* Wrapper */
+.floating-field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Inputs & Textarea */
+.floating-field input,
+.floating-field textarea {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 16px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Label inside input */
+.floating-field label {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 0 5px;
+}
+
+/* Focus + Filled state */
+.floating-field input:focus,
+.floating-field textarea:focus {
+  border-color: #0073e6;
+}
+
+.floating-field input:focus + label,
+.floating-field input:not(:placeholder-shown) + label,
+.floating-field textarea:focus + label,
+.floating-field textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 10px;
+  font-size: 12px;
+  color: #0073e6;
+}
+ /* Contact Form ubmit Button */
+.wpcf7 .wpcf7-submit {
+  display: block;
+  width: 100%;               /* full-width button */
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0073e6, #00b4d8);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,115,230,0.25);
+}
+
+/* Hover effect */
+.wpcf7 .wpcf7-submit:hover {
+  background: linear-gradient(135deg, #00b4d8, #0073e6);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,115,230,0.35);
+}
+
+/* Active (when clicked) */
+.wpcf7 .wpcf7-submit:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 10px rgba(0,115,230,0.25);
+}
+
+/* blob 2d */
+.blob-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 20px;
+  color: #fff;
+}
+
+.blob-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.blob-background svg {
+  width: 100%;
+  height: 100%;
+}
+
+.blob-content {
+  position: relative;
+  z-index: 2;
+}
+
+.blob-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.blob-content p {
+  font-size: 1.2rem;
+}
+
+
+
+/* styles for client 1 */
+
+/* Hero Section */
+.client1-hero {
+  background: #f9f9f9;
+  color: #222;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Card */
+.client1-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+.client1-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.05);
+}
+
+/* Button */
+.client1-btn {
+  background: #111;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.client1-btn:hover {
+  background: #444;
+}
+
+
+/*  styles for client 2 */
+
+.client2-hero {
+  background: linear-gradient(135deg, #1a1a1a, #000);
+  color: #ffd700;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.client2-card {
+  background: #111;
+  border-radius: 16px;
+  padding: 25px;
+  color: #eee;
+  border: 1px solid rgba(255,215,0,0.3);
+  transition: transform 0.3s ease;
+}
+.client2-card:hover {
+  transform: scale(1.03);
+  border-color: #ffd700;
+}
+
+.client2-btn {
+  background: transparent;
+  color: #ffd700;
+  border: 2px solid #ffd700;
+  padding: 12px 30px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.client2-btn:hover {
+  background: #ffd700;
+  color: #111;
+}
+
+/* styles for client 3 */
+.client3-hero {
+  background: linear-gradient(120deg, #ff6b6b, #feca57, #48dbfb, #1dd1a1);
+  background-size: 400% 400%;
+  animation: colorflow 12s ease infinite;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+@keyframes colorflow {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+.client3-card {
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+.client3-card:hover {
+  transform: rotate(-2deg) scale(1.05);
+}
+
+.client3-btn {
+  background: #ff6b6b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 14px 32px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.client3-btn:hover {
+  background: #feca57;
+  color: #111;
+}
+
+/* styles for client 4 */
+.client4-hero {
+  background: #0a0a0a;
+  color: #0ff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.client4-card {
+  background: #111;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid rgba(0,255,255,0.4);
+  color: #0ff;
+  transition: box-shadow 0.3s ease;
+}
+.client4-card:hover {
+  box-shadow: 0 0 20px #0ff, inset 0 0 10px #0ff;
+}
+
+.client4-btn {
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  padding: 12px 28px;
+  border-radius: 40px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #0ff;
+}
+.client4-btn:hover {
+  background: #0ff;
+  color: #111;
+}
+
+/* style for client 5 */
+.client5-hero {
+  background: linear-gradient(120deg, #d4fc79, #96e6a1);
+  color: #2d572c;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.client5-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  border-left: 6px solid #2d572c;
+  transition: transform 0.3s ease;
+}
+.client5-card:hover {
+  transform: scale(1.03);
+}
+
+.client5-btn {
+  background: #2d572c;
+  color: #fff;
+  border-radius: 6px;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+}
+.client5-btn:hover {
+  background: #96e6a1;
+  color: #2d572c;
+}
+
+
+/* style for client 6 */
+.client6-hero {
+  background: #ff005c;
+  color: #fff;
+  padding: 90px 20px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.client6-card {
+  background: #fff;
+  border-radius: 0;
+  padding: 25px;
+  border: 4px solid #ff005c;
+  transition: transform 0.3s ease;
+}
+.client6-card:hover {
+  transform: rotate(1deg) scale(1.02);
+}
+
+.client6-btn {
+  background: #ff005c;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 0;
+  transition: opacity 0.3s ease;
+}
+.client6-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* style for client 7 */
+.client7-hero {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  color: #333;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.client7-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.client7-card:hover {
+  transform: translateY(-6px);
+}
+
+.client7-btn {
+  background: #a6c1ee;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 28px;
+  transition: all 0.3s ease;
+}
+.client7-btn:hover {
+  background: #fbc2eb;
+  color: #111;
+}
